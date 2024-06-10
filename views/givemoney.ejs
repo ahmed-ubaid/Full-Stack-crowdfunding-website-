@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Baloo+Bhaijaan+2&display=swap" rel="stylesheet">
+
+    <title>shopping main</title>
+    <%-include('partials/style')%>
+    <link rel="stylesheet" href="/css/bootstrap.min.css">
+
+</head>
+<body>
+    <nav class="children" id="nav_bar">
+        <div class="nav_child" id="logo_container">
+           <span id="logo"> Fundchain </span>
+        </div>
+
+
+        <div class="nav_child" id="credentials_container">
+            <ul id="credential_list">
+                <li class="credentials" id="login"> 
+                    <a href="/main" class="cred_links">Home</a> 
+                </li>
+                <li class="credentials" id="Home"> 
+                    <a href="/investors" class="cred_links"><%=newObject.username%></a>
+                </li>
+            </ul>
+        </div>
+        </div>
+    </nav>
+    
+    <main class="children" id="main_content">
+
+        <div class="content_holder" id="mid_section_00">
+
+            <div class="mid_c" id="proposalForm">
+                <form action="/giveMoney" method="post" id="propForm" class="pushy">
+                    <label for="name">Enter name</label>
+                    <input type="text" id="name" name="name">
+            
+                    <label for="description">Enter Id of proposal</label>
+                    <input type="text" id="IDss" name="IDss">
+            
+                    <label for="request">Enter amount </label>
+                    <input type="number" id="amount" name="amount">
+                    <button id="login_btn" class="login_screen1"> 
+                        submit
+                    </button>
+                </form>
+            </div>
+        </div>
+
+    </main>
+
+    <script src="/js/jquery.js"></script>
+    <script src="/js/bootstrap.min.js"></script>
+</body>
+</html>

@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Baloo+Bhaijaan+2&display=swap" rel="stylesheet">
+
+    <title>shopping main</title>
+    <%-include('partials/style')%>
+    <link rel="stylesheet" href="/css/bootstrap.min.css">
+
+</head>
+<body>
+    <nav class="children" id="nav_bar">
+        <div class="nav_child" id="logo_container">
+           <span id="logo"> Fundchain </span>
+        </div>
+
+        <div class="nav_child" id="credentials_container">
+            <ul id="credential_list">
+                <li class="credentials" id="login"> <a href="/signup" class="cred_links">SignUp</a> </li>
+                <li class="credentials" id="Home"> <a href="/home" class="cred_links">Home</a></li>
+            </ul>
+        </div>
+
+    </nav>
+
+    <main class="children" id="main_content">
+
+        <div  class="ui" id="login_screen_container">
+            <h3 id="login_text" class="login_screen">Login to your account</h3>
+
+            <form action="/existinvestor" method="post" class="login_screen">
+                <label for="username">Enter username</label>
+                <input type="text" id="username_login" class="login_screen1" name="username" placeholder="Username">
+        
+                <label for="password">Enter password</label>
+                <input type="password" id="password_login" class="login_screen1" name="password" placeholder="password">
+
+                <button id="login_btn" class="login_screen1">login</button>
+            </form>
+            
+        </div>
+
+    </main>
+
+
+
+    <script src="/js/jquery.js"></script>
+    <script src="/js/bootstrap.min.js"></script>
+    <!-- <script src="/js/shopping.js"></script> -->
+    <script src="/js/confirm.js"></script>
+
+</body>
+</html>
